@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playwrite+CA+Guides&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    font-family:  "Lato", sans-serif; 
+    margin:0;
+    padding:0;
+}
+
+body {
+    display:flex;
+}
+
+.side-view {
+    background-image:url("images/aside.png");
+    width:310px;
+    height:825px;
+    background-position:50% 50% ;
+}
+
+.logo{
+    display:flex;
+    gap:5px;
+    align-items:center;
+}
+
+.logo-symbol img {
+    width:80px;
+    padding:1px;
+}
+
+.project-name h1 {
+    color:white;
+    font-size:39px;
+    font-weight:bold;
+    font-style:italic;
+}
+
+.project-name span {
+    color:cyan;
+    text-shadow: 2px 2px 4px gray;
+}
+
+
+
+.points {
+    color:white;
+    margin-top:3px;
+}
+
+.menu {
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    margin-top:50px;
+    margin-left:20px;
+    margin-right:25px;
+}
+
+.menu-buttons {
+ display:flex;
+ gap:15px;
+ color:white;
+ height:45px;
+ align-items:center;
+ text-decoration:none;
+}
+
+.menu a:hover {
+     background-color: #172554;
+    color: #60A5FA;
+    border-radius:12px;
+    border:3px solid darkgray;
+    box-shadow:  2px 2px 20px  rgba(59, 130, 246, 0.55);
+    transform:scale(1.06);
+    transform:translateY(-5px);
+    transition:0.2s;
+    cursor:pointer;
+    opacity:0.7;
+    transition:opacity 0.6s;
+}
+
+.quote {
+    color:white;
+    margin-top:100px;
+    padding-left:30px;
+    transform:rotate(-4deg);
+    font-size:10px;
+}
+
+.quote-top {
+   font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  color:gray;
+}
+
+.quote-bottom {
+    font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+  margin-left:20px;
+  margin-top:10px;
+  color:gray;
+}
+
+.header {
+    display:flex;
+    height:80px;
+    width:1260px;
+    border-bottom:1px solid;
+    border-color:rgb(172, 164, 164);
+}
+
+.small-container {
+    display:flex;
+    gap:10px;
+    height:35px;
+    width:730px;
+    background-color:lightgray;
+    margin-top:25px;
+    margin-left:35px;
+    align-items:center;
+    border-radius:10px;
+    box-shadow:5px 6px 15px black ;
+}
+
+.search-icon {
+    margin-left:5px;
+}
+
+.searchbar {
+    border:none;
+    width:600px;
+    background-color:lightgray;
+}
+
+.small-container:hover {
+    transform:scale(1.03);
+    cursor:pointer;
+    transform:translateY(1px);
+    transition:0.1s;
+}
+
+.small-container:active {
+    opacity:0.6;
+}
+
+.bell-icon {
+    height:25px;
+    margin-top:29px;
+    margin-left:290px;
+}
+
+.bell-icon:active {
+    transform:scale(1.2);
+}
+
+.bell-icon:hover {
+    cursor:pointer;
+    border-radius:50% 50% ;
+    background-color:lightblue;
+}
+
+.profile-photo {
+    display:flex;
+    gap:10px;
+    width:150px;
+    height:28px;
+    margin-top:29px;
+    margin-left:40px;
+}
+
+#main-content {
+  position:absolute;
+  left:278px;
+  top:85px;
+  height:740px;
+  width:1250px;
+}
+
+.salutation {
+    background-image:url("images/header.png");
+    box-sizing:border-box;
+    background-position:40% 50%;
+    padding:15px;
+}
+
+.capital {
+    font-size:40px;
+}
+
+
+.capital span {
+    color:blue;
+    font-style:italic;
+    font-weight:bolder;
+}
+
+.quote {
+    color:blue;
+    transform:rotate(0.5deg);
+    font-size:20px;
+    margin-bottom:100px;
+}
+
+/* =========================================================
+   ADDED CSS FROM WHERE YOU LEFT OFF
+   ========================================================= */
+
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adjust salutation box so the right column fits beside it */
+.salutation {
+    width: 880px;
+    height: 145px;
+    margin-left: 35px;
+    margin-top: 15px;
+    border-radius: 16px;
+    background-color: #dbeafe;
+    background-size: cover;
+}
+
+.salutation .quote {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/* 1. ABOUT NOTES (4 Quick Action Cards) */
+.about-notes {
+    display: flex;
+    gap: 16px;
+    width: 880px;
+    margin-left: 35px;
+    margin-top: 16px;
+}
+
+.notes-design {
+    flex: 1;
+    padding: 16px;
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.notes-design:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+.card-upload { background-color: #eff6ff; }
+.card-explore { background-color: #f5f3ff; }
+.card-mynotes { background-color: #f0fdf4; }
+.card-saved { background-color: #fffbeb; }
+
+.notes-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon-blue { background-color: #dbeafe; }
+.icon-purple { background-color: #ede9fe; }
+.icon-green { background-color: #dcfce7; }
+.icon-yellow { background-color: #fef3c7; }
+
+.notes-design h3 {
+    font-size: 16px;
+    color: #1e293b;
+    margin-bottom: 6px;
+}
+
+.notes-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.arrow-symbol {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3b82f6;
+}
+
+/* 2. FEATURED NOTES */
+.featured-notes {
+    width: 880px;
+    margin-left: 35px;
+    margin-top: 16px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px 20px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.heading-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.heading-left h2 {
+    font-size: 18px;
+    color: #0f172a;
+}
+
+.view-all-link {
+    text-decoration: none;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.featured-grid {
+    display: flex;
+    gap: 14px;
+}
+
+.f-card {
+    flex: 1;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 14px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.f-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.subject-badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 12px;
+}
+
+.badge-cse { background-color: #dbeafe; color: #1d4ed8; }
+.badge-maths { background-color: #ede9fe; color: #6d28d9; }
+.badge-physics { background-color: #dcfce7; color: #15803d; }
+
+.dots {
+    color: #94a3b8;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.f-card h4 {
+    font-size: 14px;
+    color: #1e293b;
+    line-height: 1.35;
+    margin-bottom: 6px;
+}
+
+.author-text {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 10px;
+}
+
+.rating-row {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.star {
+    color: #f59e0b;
+}
+
+.useful-count {
+    color: #64748b;
+}
+
+.f-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #f1f5f9;
+    font-size: 12px;
+    color: #64748b;
+}
+
+.download-icon {
+    color: #2563eb;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 3. POPULAR TOPICS */
+.popular-topics {
+    width: 880px;
+    margin-left: 35px;
+    margin-top: 16px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px 20px;
+}
+
+.topics-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.topic-tag {
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.t-blue { background-color: #eff6ff; color: #1d4ed8; }
+.t-indigo { background-color: #eef2ff; color: #4338ca; }
+.t-green { background-color: #f0fdf4; color: #15803d; }
+.t-purple { background-color: #faf5ff; color: #7e22ce; }
+.t-yellow { background-color: #fffbeb; color: #b45309; }
+.t-red { background-color: #fef2f2; color: #b91c1c; }
+
+/* 4. COUNTING (Right Side Top Card) */
+.counting {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.count-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.count-row .notes-icon {
+    margin-bottom: 0;
+}
+
+.count-info h3 {
+    font-size: 18px;
+    color: #0f172a;
+}
+
+.count-info p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* 5. RECENT UPLOADS (Right Side Middle Card) */
+.recent-uploads {
+    position: absolute;
+    top: 235px;
+    right: 20px;
+    width: 300px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px 20px;
+}
+
+.upload-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.upload-item:last-child {
+    border-bottom: none;
+}
+
+.small-doc-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.upload-item h4 {
+    font-size: 13px;
+    color: #1e293b;
+    margin-bottom: 2px;
+}
+
+.upload-item p {
+    font-size: 11px;
+    color: #64748b;
+}
+
+/* 6. INFORMATION TAB (Right Side Bottom Quote Card) */
+.information-tab {
+    position: absolute;
+    top: 545px;
+    right: 20px;
+    width: 300px;
+    height: 175px;
+    border-radius: 16px;
+    padding: 20px;
+    background: linear-gradient(135deg, #e0f2fe 0%, #bfdbfe 60%, #1e3a8a 100%);
+    color: #0f172a;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.information-tab h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    color: #0f172a;
+}
